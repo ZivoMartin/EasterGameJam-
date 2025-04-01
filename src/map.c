@@ -62,6 +62,9 @@ Map* init_map(char* map_path) {
                 };
                 map->map[height][current_col++] = Nothing;
                 break;
+            case 'f':
+                map->map[height][current_col++] = Flower;
+                break;
             default:
                 fprintf(stderr, "Error while loading the map %s: unsupported character '%c'\n", map_path, c);
                 exit(EXIT_FAILURE);

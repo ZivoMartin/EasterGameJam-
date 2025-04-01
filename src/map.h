@@ -10,6 +10,7 @@
 typedef enum Tile {
     Nothing,
     Wall,
+    Flower
 } Tile;
 
 typedef struct Map {
